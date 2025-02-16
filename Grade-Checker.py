@@ -1,4 +1,5 @@
 # Grade Checker
+name =  str(input("What is your name: "))
 score = int(input("What is your Score: "))
 
 if score >= 90:
@@ -15,8 +16,8 @@ else:
     grade = "F"
 
 if score > 100:
-    response = "invalid score"
+    response = f"Sorry {name}, That's an invalid score"
 else:
-    response = f"Your grade is: {grade}"
+    response = f"Thanks {name}, Your grade is: {grade}"
 
 print(response)
